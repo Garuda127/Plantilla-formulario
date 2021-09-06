@@ -16,7 +16,7 @@ namespace Plantilla_formulario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CuadradosMedios());
+            Application.Run(new Form1());
         }
     }
 }
