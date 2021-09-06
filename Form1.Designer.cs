@@ -113,7 +113,7 @@ namespace Plantilla_formulario
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Superscript;
             this.iconButton2.IconColor = System.Drawing.Color.LightGray;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -122,10 +122,11 @@ namespace Plantilla_formulario
             this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton2.Size = new System.Drawing.Size(220, 60);
             this.iconButton2.TabIndex = 3;
-            this.iconButton2.Text = "Lineal";
+            this.iconButton2.Text = "C.Medios";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // iconButton1
             // 
@@ -135,7 +136,7 @@ namespace Plantilla_formulario
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Times;
             this.iconButton1.IconColor = System.Drawing.Color.LightGray;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
