@@ -1,0 +1,14 @@
+C:\Users\Herfesto\source\repos\Plantilla formulario\bin\Debug\Plantilla formulario.exe.config
+C:\Users\Herfesto\source\repos\Plantilla formulario\bin\Debug\Plantilla formulario.exe
+C:\Users\Herfesto\source\repos\Plantilla formulario\bin\Debug\Plantilla formulario.pdb
+C:\Users\Herfesto\source\repos\Plantilla formulario\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Herfesto\source\repos\Plantilla formulario\obj\Debug\Plantilla formulario.csproj.AssemblyReference.cache
+C:\Users\Herfesto\source\repos\Plantilla formulario\obj\Debug\Plantilla_formulario.Form1.resources
+C:\Users\Herfesto\source\repos\Plantilla formulario\obj\Debug\Plantilla_formulario.Properties.Resources.resources
+C:\Users\Herfesto\source\repos\Plantilla formulario\obj\Debug\Plantilla formulario.csproj.GenerateResource.cache
+C:\Users\Herfesto\source\repos\Plantilla formulario\obj\Debug\Plantilla formulario.csproj.CoreCompileInputs.cache
+C:\Users\Herfesto\source\repos\Plantilla formulario\obj\Debug\Plantilla formulario.csproj.CopyComplete
+C:\Users\Herfesto\source\repos\Plantilla formulario\obj\Debug\Plantilla formulario.exe
+C:\Users\Herfesto\source\repos\Plantilla formulario\obj\Debug\Plantilla formulario.pdb
+C:\Users\Herfesto\source\repos\Plantilla formulario\obj\Debug\Plantilla_formulario.Lineal.resources
+C:\Users\Herfesto\source\repos\Plantilla formulario\obj\Debug\Plantilla_formulario.ProductosMedios.resources
