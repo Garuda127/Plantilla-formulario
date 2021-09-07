@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Caditivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caditivo.Designer.cs">
+      <DependentUpon>Caditivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="CuadradosMedios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
       <DependentUpon>ProductosMedios.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Caditivo.resx">
+      <DependentUpon>Caditivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CuadradosMedios.resx">
       <DependentUpon>CuadradosMedios.cs</DependentUpon>
     </EmbeddedResource>
