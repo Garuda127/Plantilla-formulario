@@ -212,7 +212,6 @@ namespace Plantilla_formulario
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(26)))), ((int)(((byte)(42)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;

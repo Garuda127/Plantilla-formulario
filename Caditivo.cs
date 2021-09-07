@@ -35,17 +35,40 @@ namespace Plantilla_formulario
             int N = Convert.ToInt32(txtN.Text);
             int M = Convert.ToInt32(txtM.Text);
             int Xi1;
+            int count=0;
+            int count2 =N;
+            int temp = 0; 
+            for (int i = 0; i < N; i++)
+            {
 
-            
-            
-                
+               
+                t[i] = ((TextBox)panel1.Controls["TxtBox" + (i + 1).ToString()]).Text;
+
+
+            }
+            dataGridView1.Rows.Add();
+
             for (int i = N; i < (N*2); i++)
             {
 
-                Xi1 = (Convert.ToInt32(t[i-1]) + Convert.ToInt32(t[i - N]) % (M));
-                dataGridView1.Rows.Add();
-                dataGridView1[0, i].Value = "X" + (i + 1);
-                dataGridView1[1, i].Value = "" + Xi1;
+                if ((i - (N))>N)
+                {
+                    Xi1 = (Convert.ToInt32(t[i - 1]) + Convert.ToInt32(t[i - (N)]) % (M));
+                    dataGridView1.Rows.Add();
+                    dataGridView1[0, i-N].Value = "X" + (i);
+                    dataGridView1[1, i - N].Value = "" + Xi1;
+                    temp = Xi1;
+                }
+                else
+                {
+                    Xi1 = (Convert.ToInt32(temp) + Convert.ToInt32(t[i - (N)]) % (M));
+                    dataGridView1.Rows.Add();
+                    dataGridView1[0, i - N].Value = "X" + (1);
+                    dataGridView1[1, i - N].Value = "" + Xi1;
+                    temp = Xi1;
+                }
+            
+                
             }           
         }
 
@@ -62,7 +85,7 @@ namespace Plantilla_formulario
                 this.txtBox.Size = new System.Drawing.Size(100, 20);
                 this.panel1.Controls.Add(this.txtBox);
                 t = new string[N];
-                t[i] = ((TextBox)panel1.Controls["TxtBox" + (i + 1).ToString()]).Text;
+                
                 //label
                 lblCount = new Label();
                 this.lblCount.ForeColor = Color.White;
