@@ -12,19 +12,53 @@ C:\Users\Herfesto\source\repos\Plantilla formulario\obj\Debug\Plantilla formular
 C:\Users\Herfesto\source\repos\Plantilla formulario\obj\Debug\Plantilla formulario.pdb
 C:\Users\Herfesto\source\repos\Plantilla formulario\obj\Debug\Plantilla_formulario.Lineal.resources
 C:\Users\Herfesto\source\repos\Plantilla formulario\obj\Debug\Plantilla_formulario.ProductosMedios.resources
-C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\bin\Debug\Plantilla formulario.exe.config
-C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\bin\Debug\Plantilla formulario.exe
-C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\bin\Debug\Plantilla formulario.pdb
-C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\bin\Debug\FontAwesome.Sharp.dll
-C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla formulario.csproj.AssemblyReference.cache
-C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla_formulario.Form1.resources
-C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla_formulario.Lineal.resources
-C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla_formulario.MultCons.resources
-C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla_formulario.ProductosMedios.resources
-C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla_formulario.Properties.Resources.resources
-C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla formulario.csproj.GenerateResource.cache
-C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla formulario.csproj.CoreCompileInputs.cache
-C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla formulario.exe
-C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla formulario.pdb
-C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla_formulario.CuadradosMedios.resources
-C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla_formulario.NumAle.resources
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\bin\Debug\Plantilla formulario.exe.config
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\bin\Debug\Plantilla formulario.exe
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\bin\Debug\Plantilla formulario.pdb
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla formulario.csproj.AssemblyReference.cache
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla_formulario.CuadradosMedios.resources
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla_formulario.Form1.resources
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla_formulario.Lineal.resources
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla_formulario.ProductosMedios.resources
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla_formulario.Properties.Resources.resources
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla formulario.csproj.GenerateResource.cache
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla formulario.csproj.CoreCompileInputs.cache
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla formulario.csproj.CopyComplete
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla formulario.exe
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla formulario.pdb
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla_formulario.Caditivo.resources
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla_formulario.MultCons.resources
+C:\Users\lpmex\Documents\GitHub\bin\Debug\Plantilla formulario.exe.config
+C:\Users\lpmex\Documents\GitHub\bin\Debug\Plantilla formulario.exe
+C:\Users\lpmex\Documents\GitHub\bin\Debug\Plantilla formulario.pdb
+C:\Users\lpmex\Documents\GitHub\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\lpmex\Documents\GitHub\obj\Debug\Plantilla formulario.csproj.AssemblyReference.cache
+C:\Users\lpmex\Documents\GitHub\obj\Debug\Plantilla_formulario.Caditivo.resources
+C:\Users\lpmex\Documents\GitHub\obj\Debug\Plantilla_formulario.CuadradosMedios.resources
+C:\Users\lpmex\Documents\GitHub\obj\Debug\Plantilla_formulario.Form1.resources
+C:\Users\lpmex\Documents\GitHub\obj\Debug\Plantilla_formulario.Lineal.resources
+C:\Users\lpmex\Documents\GitHub\obj\Debug\Plantilla_formulario.MultCons.resources
+C:\Users\lpmex\Documents\GitHub\obj\Debug\Plantilla_formulario.ProductosMedios.resources
+C:\Users\lpmex\Documents\GitHub\obj\Debug\Plantilla_formulario.Properties.Resources.resources
+C:\Users\lpmex\Documents\GitHub\obj\Debug\Plantilla formulario.csproj.GenerateResource.cache
+C:\Users\lpmex\Documents\GitHub\obj\Debug\Plantilla formulario.csproj.CoreCompileInputs.cache
+C:\Users\lpmex\Documents\GitHub\obj\Debug\Plantilla formulario.exe
+C:\Users\lpmex\Documents\GitHub\obj\Debug\Plantilla formulario.pdb
+C:\Users\Herfesto\Downloads\Project\Project\bin\Debug\Plantilla formulario.exe.config
+C:\Users\Herfesto\Downloads\Project\Project\bin\Debug\Plantilla formulario.exe
+C:\Users\Herfesto\Downloads\Project\Project\bin\Debug\Plantilla formulario.pdb
+C:\Users\Herfesto\Downloads\Project\Project\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla formulario.csproj.AssemblyReference.cache
+C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla_formulario.Caditivo.resources
+C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla_formulario.CuadradosMedios.resources
+C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla_formulario.Form1.resources
+C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla_formulario.Lineal.resources
+C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla_formulario.MultCons.resources
+C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla_formulario.ProductosMedios.resources
+C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla_formulario.Properties.Resources.resources
+C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla formulario.csproj.GenerateResource.cache
+C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla formulario.csproj.CoreCompileInputs.cache
+C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla formulario.csproj.CopyComplete
+C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla formulario.exe
+C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla formulario.pdb

@@ -186,5 +186,22 @@ namespace Plantilla_formulario
             ActivateButton(sender, RGBColors.color4);
             OpenChildForm(new MultCons());
         }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color5);
+            OpenChildForm(new Caditivo());
+        }
+
+        private void iconButton5_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color3);
+            OpenChildForm(new CuadradosMedios());
+        }
     }
 }
