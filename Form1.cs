@@ -181,10 +181,10 @@ namespace Plantilla_formulario
 
         }
 
-        private void iconButton2_Click(object sender, EventArgs e)
+        private void iconButton3_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new CuadradosMedios());
+            ActivateButton(sender, RGBColors.color4);
+            OpenChildForm(new MultCons());
         }
     }
 }
