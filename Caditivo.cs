@@ -35,17 +35,23 @@ namespace Plantilla_formulario
             int N = Convert.ToInt32(txtN.Text);
             int M = Convert.ToInt32(txtM.Text);
             int Xi1;
-
-            
+            int count=0;
+            int count2 =N;
+            for (int i = 0; i < N; i++)
+            {
+                t[i] = ((TextBox)panel1.Controls["TxtBox" + (i+1).ToString()]).Text;
+            }
             
                 
             for (int i = N; i < (N*2); i++)
             {
+                
 
-                Xi1 = (Convert.ToInt32(t[i-1]) + Convert.ToInt32(t[i - N]) % (M));
+                Xi1 = (Convert.ToInt32(t[count]) + Convert.ToInt32(t[count]) % (M));
                 dataGridView1.Rows.Add();
-                dataGridView1[0, i].Value = "X" + (i + 1);
-                dataGridView1[1, i].Value = "" + Xi1;
+                dataGridView1[0, count].Value = "X" + (count + 1);
+                dataGridView1[1, count].Value = "" + Xi1;
+                count++;
             }           
         }
 
@@ -62,7 +68,7 @@ namespace Plantilla_formulario
                 this.txtBox.Size = new System.Drawing.Size(100, 20);
                 this.panel1.Controls.Add(this.txtBox);
                 t = new string[N];
-                t[i] = ((TextBox)panel1.Controls["TxtBox" + (i + 1).ToString()]).Text;
+                
                 //label
                 lblCount = new Label();
                 this.lblCount.ForeColor = Color.White;
