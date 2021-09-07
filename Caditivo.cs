@@ -35,6 +35,8 @@ namespace Plantilla_formulario
             int N = Convert.ToInt32(txtN.Text);
             int M = Convert.ToInt32(txtM.Text);
             int Xi1;
+            int m2 = M - 1;
+            double Ri;
             int count=0;
             int count2 =N;
             int temp = 0; 
@@ -47,28 +49,24 @@ namespace Plantilla_formulario
 
             }
             dataGridView1.Rows.Add();
-
-            for (int i = N; i < (N*2); i++)
+            count = (Convert.ToInt32(t[0]) + Convert.ToInt32(t[4]));
+            Xi1 = count  % (M);
+            dataGridView1.Rows.Add();
+            dataGridView1[0, 0].Value = "X1";
+            dataGridView1[1, 0].Value = "" + Xi1;
+            Ri = (double) Xi1 / m2;
+            dataGridView1[2, 0].Value = String.Format("{0:0.000#}", Ri);
+            temp = Xi1;
+            for (int i = 1; i < N; i++)
             {
-
-                if ((i - (N))>N)
-                {
-                    Xi1 = (Convert.ToInt32(t[i - 1]) + Convert.ToInt32(t[i - (N)]) % (M));
-                    dataGridView1.Rows.Add();
-                    dataGridView1[0, i-N].Value = "X" + (i);
-                    dataGridView1[1, i - N].Value = "" + Xi1;
-                    temp = Xi1;
-                }
-                else
-                {
-                    Xi1 = (Convert.ToInt32(temp) + Convert.ToInt32(t[i - (N)]) % (M));
-                    dataGridView1.Rows.Add();
-                    dataGridView1[0, i - N].Value = "X" + (1);
-                    dataGridView1[1, i - N].Value = "" + Xi1;
-                    temp = Xi1;
-                }
-            
-                
+                count = (Convert.ToInt32(t[i]) + Convert.ToInt32(temp));
+                Xi1 = count % (M);
+                dataGridView1.Rows.Add();
+                    dataGridView1[0, i].Value = "X" + (1);
+                    dataGridView1[1, i].Value = "" + Xi1;
+                Ri =(double) Xi1 / m2;
+                    dataGridView1[2, i].Value = String.Format("{0:0.000#}", Ri);
+                temp = Xi1;
             }           
         }
 

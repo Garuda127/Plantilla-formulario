@@ -38,10 +38,10 @@ namespace Plantilla_formulario
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnHome = new FontAwesome.Sharp.IconButton();
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconButton();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -70,7 +70,7 @@ namespace Plantilla_formulario
             this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton4.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Plus;
             this.iconButton4.IconColor = System.Drawing.Color.LightGray;
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -79,10 +79,11 @@ namespace Plantilla_formulario
             this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton4.Size = new System.Drawing.Size(220, 60);
             this.iconButton4.TabIndex = 5;
-            this.iconButton4.Text = "Lineal";
+            this.iconButton4.Text = "C.Aditivo";
             this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton4.UseVisualStyleBackColor = false;
+            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
             // 
             // iconButton3
             // 
@@ -92,7 +93,7 @@ namespace Plantilla_formulario
             this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Copyright;
             this.iconButton3.IconColor = System.Drawing.Color.LightGray;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -101,7 +102,7 @@ namespace Plantilla_formulario
             this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton3.Size = new System.Drawing.Size(220, 60);
             this.iconButton3.TabIndex = 4;
-            this.iconButton3.Text = "Lineal";
+            this.iconButton3.Text = "MultiConstante";
             this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton3.UseVisualStyleBackColor = false;
@@ -128,7 +129,7 @@ namespace Plantilla_formulario
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = false;
-            //this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // iconButton1
             // 
@@ -216,6 +217,21 @@ namespace Plantilla_formulario
             this.panelTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitleBar_Paint);
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
+            // iconButton5
+            // 
+            this.iconButton5.FlatAppearance.BorderSize = 0;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.iconButton5.IconColor = System.Drawing.Color.Red;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton5.IconSize = 15;
+            this.iconButton5.Location = new System.Drawing.Point(1026, 3);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Size = new System.Drawing.Size(15, 15);
+            this.iconButton5.TabIndex = 2;
+            this.iconButton5.UseVisualStyleBackColor = true;
+            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click_1);
+            // 
             // lblTitleChildForm
             // 
             this.lblTitleChildForm.AutoSize = true;
@@ -248,20 +264,6 @@ namespace Plantilla_formulario
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(1044, 581);
             this.panelDesktop.TabIndex = 2;
-            // 
-            // iconButton5
-            // 
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.iconButton5.IconColor = System.Drawing.Color.Red;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.IconSize = 15;
-            this.iconButton5.Location = new System.Drawing.Point(1026, 3);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(15, 15);
-            this.iconButton5.TabIndex = 2;
-            this.iconButton5.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
