@@ -73,6 +73,12 @@
     <Compile Include="MultCons.Designer.cs">
       <DependentUpon>MultCons.cs</DependentUpon>
     </Compile>
+    <Compile Include="NumAle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumAle.Designer.cs">
+      <DependentUpon>NumAle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="ProductosMedios.cs">
       <SubType>Form</SubType>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MultCons.resx">
       <DependentUpon>MultCons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumAle.resx">
+      <DependentUpon>NumAle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductosMedios.resx">
       <DependentUpon>ProductosMedios.cs</DependentUpon>

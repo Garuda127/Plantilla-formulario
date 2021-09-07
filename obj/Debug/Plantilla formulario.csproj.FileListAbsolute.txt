@@ -26,3 +26,5 @@ C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla formula
 C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla formulario.csproj.CoreCompileInputs.cache
 C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla formulario.exe
 C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla formulario.pdb
+C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla_formulario.CuadradosMedios.resources
+C:\Users\lpmex\Documents\GitHub\Plantilla-formulario\obj\Debug\Plantilla_formulario.NumAle.resources

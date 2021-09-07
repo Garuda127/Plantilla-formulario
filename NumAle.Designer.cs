@@ -1,7 +1,7 @@
 ﻿
 namespace Plantilla_formulario
 {
-    partial class MultCons
+    partial class NumAle
     {
         /// <summary>
         /// Required designer variable.
@@ -41,6 +41,7 @@ namespace Plantilla_formulario
             this.N = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Xi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ri = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LB6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +49,7 @@ namespace Plantilla_formulario
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(26)))), ((int)(((byte)(42)))));
+            this.panel1.Controls.Add(this.LB6);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.TB3);
             this.panel1.Controls.Add(this.TB2);
@@ -59,13 +61,13 @@ namespace Plantilla_formulario
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 450);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(62, 147);
+            this.button1.Location = new System.Drawing.Point(60, 222);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(80, 23);
             this.button1.TabIndex = 6;
             this.button1.Text = "Aceptar";
             this.button1.UseVisualStyleBackColor = true;
@@ -99,9 +101,9 @@ namespace Plantilla_formulario
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(13, 98);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 24);
+            this.label3.Size = new System.Drawing.Size(46, 24);
             this.label3.TabIndex = 2;
-            this.label3.Text = "N =";
+            this.label3.Text = "x0 =";
             // 
             // label2
             // 
@@ -110,9 +112,9 @@ namespace Plantilla_formulario
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(13, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 24);
+            this.label2.Size = new System.Drawing.Size(37, 24);
             this.label2.TabIndex = 1;
-            this.label2.Text = "x0 =";
+            this.label2.Text = "g =";
             // 
             // label1
             // 
@@ -121,9 +123,9 @@ namespace Plantilla_formulario
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 24);
+            this.label1.Size = new System.Drawing.Size(35, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "a =";
+            this.label1.Text = "k =";
             // 
             // dataGridView1
             // 
@@ -137,7 +139,7 @@ namespace Plantilla_formulario
             this.dataGridView1.Location = new System.Drawing.Point(200, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(600, 450);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.TabIndex = 2;
             // 
             // N
             // 
@@ -157,15 +159,26 @@ namespace Plantilla_formulario
             this.Ri.HeaderText = "Ri";
             this.Ri.Name = "Ri";
             // 
-            // MultCons
+            // LB6
+            // 
+            this.LB6.AutoSize = true;
+            this.LB6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LB6.Location = new System.Drawing.Point(56, 268);
+            this.LB6.Name = "LB6";
+            this.LB6.Size = new System.Drawing.Size(55, 24);
+            this.LB6.TabIndex = 11;
+            this.LB6.Text = "N = ?";
+            // 
+            // NumAle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
-            this.Name = "MultCons";
-            this.Text = "MultCons";
+            this.Name = "NumAle";
+            this.Text = "NumAle";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -187,5 +200,6 @@ namespace Plantilla_formulario
         private System.Windows.Forms.DataGridViewTextBoxColumn N;
         private System.Windows.Forms.DataGridViewTextBoxColumn Xi;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ri;
+        private System.Windows.Forms.Label LB6;
     }
 }
