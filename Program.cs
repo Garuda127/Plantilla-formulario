@@ -16,7 +16,7 @@ namespace Plantilla_formulario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Caditivo());
+            Application.Run(new NumAle());
         }
     }
 }
