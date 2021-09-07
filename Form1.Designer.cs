@@ -41,6 +41,7 @@ namespace Plantilla_formulario
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconButton();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -203,6 +204,7 @@ namespace Plantilla_formulario
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(50)))));
+            this.panelTitleBar.Controls.Add(this.iconButton5);
             this.panelTitleBar.Controls.Add(this.lblTitleChildForm);
             this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -246,6 +248,20 @@ namespace Plantilla_formulario
             this.panelDesktop.Size = new System.Drawing.Size(1044, 581);
             this.panelDesktop.TabIndex = 2;
             // 
+            // iconButton5
+            // 
+            this.iconButton5.FlatAppearance.BorderSize = 0;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.iconButton5.IconColor = System.Drawing.Color.Red;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton5.IconSize = 15;
+            this.iconButton5.Location = new System.Drawing.Point(1026, 3);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Size = new System.Drawing.Size(15, 15);
+            this.iconButton5.TabIndex = 2;
+            this.iconButton5.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,6 +296,7 @@ namespace Plantilla_formulario
         private System.Windows.Forms.Label lblTitleChildForm;
         private FontAwesome.Sharp.IconButton iconCurrentChildForm;
         private FontAwesome.Sharp.IconButton btnHome;
+        private FontAwesome.Sharp.IconButton iconButton5;
     }
 }
 

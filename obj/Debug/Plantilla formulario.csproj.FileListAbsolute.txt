@@ -27,3 +27,4 @@ C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla form
 C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla formulario.csproj.CopyComplete
 C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla formulario.exe
 C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla formulario.pdb
+C:\Users\Herfesto\Documents\GitHub\Plantilla formulario\obj\Debug\Plantilla_formulario.Caditivo.resources
