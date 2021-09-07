@@ -37,21 +37,38 @@ namespace Plantilla_formulario
             int Xi1;
             int count=0;
             int count2 =N;
+            int temp = 0; 
             for (int i = 0; i < N; i++)
             {
-                t[i] = ((TextBox)panel1.Controls["TxtBox" + (i+1).ToString()]).Text;
+
+               
+                t[i] = ((TextBox)panel1.Controls["TxtBox" + (i + 1).ToString()]).Text;
+
+
             }
-            
-                
+            dataGridView1.Rows.Add();
+
             for (int i = N; i < (N*2); i++)
             {
-                
 
-                Xi1 = (Convert.ToInt32(t[count]) + Convert.ToInt32(t[count]) % (M));
-                dataGridView1.Rows.Add();
-                dataGridView1[0, count].Value = "X" + (count + 1);
-                dataGridView1[1, count].Value = "" + Xi1;
-                count++;
+                if ((i - (N))>N)
+                {
+                    Xi1 = (Convert.ToInt32(t[i - 1]) + Convert.ToInt32(t[i - (N)]) % (M));
+                    dataGridView1.Rows.Add();
+                    dataGridView1[0, i-N].Value = "X" + (i);
+                    dataGridView1[1, i - N].Value = "" + Xi1;
+                    temp = Xi1;
+                }
+                else
+                {
+                    Xi1 = (Convert.ToInt32(temp) + Convert.ToInt32(t[i - (N)]) % (M));
+                    dataGridView1.Rows.Add();
+                    dataGridView1[0, i - N].Value = "X" + (1);
+                    dataGridView1[1, i - N].Value = "" + Xi1;
+                    temp = Xi1;
+                }
+            
+                
             }           
         }
 
