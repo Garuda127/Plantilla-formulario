@@ -39,6 +39,7 @@ namespace Plantilla_formulario
             this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Xi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ri = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnChi = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -63,6 +64,7 @@ namespace Plantilla_formulario
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(26)))), ((int)(((byte)(42)))));
+            this.panel1.Controls.Add(this.btnChi);
             this.panel1.Controls.Add(this.txtX0);
             this.panel1.Controls.Add(this.btnOK);
             this.panel1.Controls.Add(this.txtN);
@@ -141,6 +143,29 @@ namespace Plantilla_formulario
             this.Ri.Name = "Ri";
             this.Ri.ReadOnly = true;
             // 
+            // btnChi
+            // 
+            this.btnChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(17)))), ((int)(((byte)(28)))));
+            this.btnChi.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnChi.FlatAppearance.BorderSize = 0;
+            this.btnChi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChi.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChi.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnChi.IconChar = FontAwesome.Sharp.IconChar.ChevronRight;
+            this.btnChi.IconColor = System.Drawing.Color.LightGray;
+            this.btnChi.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnChi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChi.Location = new System.Drawing.Point(0, 390);
+            this.btnChi.Name = "btnChi";
+            this.btnChi.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnChi.Size = new System.Drawing.Size(151, 60);
+            this.btnChi.TabIndex = 17;
+            this.btnChi.Text = "Chi";
+            this.btnChi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnChi.UseVisualStyleBackColor = false;
+            this.btnChi.Click += new System.EventHandler(this.btnChi_Click);
+            // 
             // CuadradosMedios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -168,5 +193,6 @@ namespace Plantilla_formulario
         private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
         private System.Windows.Forms.DataGridViewTextBoxColumn Xi;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ri;
+        private FontAwesome.Sharp.IconButton btnChi;
     }
 }

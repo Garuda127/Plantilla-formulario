@@ -49,6 +49,7 @@ namespace Plantilla_formulario
             this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Xi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ri = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnChi = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -135,6 +136,7 @@ namespace Plantilla_formulario
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(26)))), ((int)(((byte)(42)))));
+            this.panel1.Controls.Add(this.btnChi);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtM);
@@ -153,7 +155,7 @@ namespace Plantilla_formulario
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(151, 572);
+            this.panel1.Size = new System.Drawing.Size(161, 572);
             this.panel1.TabIndex = 9;
             // 
             // label5
@@ -222,10 +224,10 @@ namespace Plantilla_formulario
             this.Ri});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(26)))), ((int)(((byte)(42)))));
-            this.dataGridView1.Location = new System.Drawing.Point(151, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(161, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(913, 572);
+            this.dataGridView1.Size = new System.Drawing.Size(903, 572);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -249,6 +251,29 @@ namespace Plantilla_formulario
             this.Ri.HeaderText = "Ri";
             this.Ri.Name = "Ri";
             this.Ri.ReadOnly = true;
+            // 
+            // btnChi
+            // 
+            this.btnChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(17)))), ((int)(((byte)(28)))));
+            this.btnChi.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnChi.FlatAppearance.BorderSize = 0;
+            this.btnChi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChi.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChi.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnChi.IconChar = FontAwesome.Sharp.IconChar.ChevronRight;
+            this.btnChi.IconColor = System.Drawing.Color.LightGray;
+            this.btnChi.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnChi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChi.Location = new System.Drawing.Point(0, 512);
+            this.btnChi.Name = "btnChi";
+            this.btnChi.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnChi.Size = new System.Drawing.Size(161, 60);
+            this.btnChi.TabIndex = 16;
+            this.btnChi.Text = "Chi";
+            this.btnChi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnChi.UseVisualStyleBackColor = false;
+            this.btnChi.Click += new System.EventHandler(this.btnChi_Click);
             // 
             // Lineal
             // 
@@ -289,5 +314,6 @@ namespace Plantilla_formulario
         private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
         private System.Windows.Forms.DataGridViewTextBoxColumn Xi;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ri;
+        private FontAwesome.Sharp.IconButton btnChi;
     }
 }

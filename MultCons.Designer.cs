@@ -30,23 +30,25 @@ namespace Plantilla_formulario
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.TB1 = new System.Windows.Forms.TextBox();
-            this.TB2 = new System.Windows.Forms.TextBox();
-            this.TB3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.TB3 = new System.Windows.Forms.TextBox();
+            this.TB2 = new System.Windows.Forms.TextBox();
+            this.TB1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.N = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Xi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ri = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnChi = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnChi);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.TB3);
             this.panel1.Controls.Add(this.TB2);
@@ -60,25 +62,36 @@ namespace Plantilla_formulario
             this.panel1.Size = new System.Drawing.Size(200, 450);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // button1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "a =";
+            this.button1.Location = new System.Drawing.Point(62, 147);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Aceptar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label2
+            // TB3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 54);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "x0 =";
+            this.TB3.Location = new System.Drawing.Point(97, 98);
+            this.TB3.Name = "TB3";
+            this.TB3.Size = new System.Drawing.Size(100, 20);
+            this.TB3.TabIndex = 5;
+            // 
+            // TB2
+            // 
+            this.TB2.Location = new System.Drawing.Point(97, 54);
+            this.TB2.Name = "TB2";
+            this.TB2.Size = new System.Drawing.Size(100, 20);
+            this.TB2.TabIndex = 4;
+            // 
+            // TB1
+            // 
+            this.TB1.Location = new System.Drawing.Point(97, 13);
+            this.TB1.Name = "TB1";
+            this.TB1.Size = new System.Drawing.Size(100, 20);
+            this.TB1.TabIndex = 3;
             // 
             // label3
             // 
@@ -90,36 +103,25 @@ namespace Plantilla_formulario
             this.label3.TabIndex = 2;
             this.label3.Text = "N =";
             // 
-            // TB1
+            // label2
             // 
-            this.TB1.Location = new System.Drawing.Point(97, 13);
-            this.TB1.Name = "TB1";
-            this.TB1.Size = new System.Drawing.Size(100, 20);
-            this.TB1.TabIndex = 3;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(13, 54);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 24);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "x0 =";
             // 
-            // TB2
+            // label1
             // 
-            this.TB2.Location = new System.Drawing.Point(97, 54);
-            this.TB2.Name = "TB2";
-            this.TB2.Size = new System.Drawing.Size(100, 20);
-            this.TB2.TabIndex = 4;
-            // 
-            // TB3
-            // 
-            this.TB3.Location = new System.Drawing.Point(97, 98);
-            this.TB3.Name = "TB3";
-            this.TB3.Size = new System.Drawing.Size(100, 20);
-            this.TB3.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(62, 147);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Aceptar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(36, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "a =";
             // 
             // dataGridView1
             // 
@@ -152,6 +154,29 @@ namespace Plantilla_formulario
             this.Ri.HeaderText = "Ri";
             this.Ri.Name = "Ri";
             // 
+            // btnChi
+            // 
+            this.btnChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(17)))), ((int)(((byte)(28)))));
+            this.btnChi.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnChi.FlatAppearance.BorderSize = 0;
+            this.btnChi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChi.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChi.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnChi.IconChar = FontAwesome.Sharp.IconChar.ChevronRight;
+            this.btnChi.IconColor = System.Drawing.Color.LightGray;
+            this.btnChi.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnChi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChi.Location = new System.Drawing.Point(0, 390);
+            this.btnChi.Name = "btnChi";
+            this.btnChi.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnChi.Size = new System.Drawing.Size(200, 60);
+            this.btnChi.TabIndex = 17;
+            this.btnChi.Text = "Chi";
+            this.btnChi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnChi.UseVisualStyleBackColor = false;
+            this.btnChi.Click += new System.EventHandler(this.btnChi_Click);
+            // 
             // MultCons
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,5 +207,6 @@ namespace Plantilla_formulario
         private System.Windows.Forms.DataGridViewTextBoxColumn N;
         private System.Windows.Forms.DataGridViewTextBoxColumn Xi;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ri;
+        private FontAwesome.Sharp.IconButton btnChi;
     }
 }

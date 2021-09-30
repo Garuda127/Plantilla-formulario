@@ -62,3 +62,21 @@ C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla formulario.cspro
 C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla formulario.csproj.CopyComplete
 C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla formulario.exe
 C:\Users\Herfesto\Downloads\Project\Project\obj\Debug\Plantilla formulario.pdb
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\Plantilla formulario.exe.config
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\Plantilla formulario.exe
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\Plantilla formulario.pdb
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.csproj.AssemblyReference.cache
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.Caditivo.resources
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.CuadradosMedios.resources
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.Form1.resources
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.Lineal.resources
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.MultCons.resources
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.ProductosMedios.resources
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.Properties.Resources.resources
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.csproj.GenerateResource.cache
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.csproj.CoreCompileInputs.cache
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.csproj.CopyComplete
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.exe
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.pdb
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.Chi.resources

@@ -32,13 +32,14 @@ namespace Plantilla_formulario
             this.txtN = new System.Windows.Forms.TextBox();
             this.btnOK = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtM = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Xi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ri = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtM = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnChi = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +65,7 @@ namespace Plantilla_formulario
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(26)))), ((int)(((byte)(42)))));
+            this.panel1.Controls.Add(this.btnChi);
             this.panel1.Controls.Add(this.txtM);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtN);
@@ -74,6 +76,25 @@ namespace Plantilla_formulario
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(155, 450);
             this.panel1.TabIndex = 10;
+            // 
+            // txtM
+            // 
+            this.txtM.Location = new System.Drawing.Point(36, 38);
+            this.txtM.Name = "txtM";
+            this.txtM.Size = new System.Drawing.Size(100, 20);
+            this.txtM.TabIndex = 6;
+            this.txtM.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(12, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(22, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "M=";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -125,24 +146,28 @@ namespace Plantilla_formulario
             this.Ri.Name = "Ri";
             this.Ri.ReadOnly = true;
             // 
-            // txtM
+            // btnChi
             // 
-            this.txtM.Location = new System.Drawing.Point(36, 38);
-            this.txtM.Name = "txtM";
-            this.txtM.Size = new System.Drawing.Size(100, 20);
-            this.txtM.TabIndex = 6;
-            this.txtM.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(12, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(22, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "M=";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.btnChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(17)))), ((int)(((byte)(28)))));
+            this.btnChi.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnChi.FlatAppearance.BorderSize = 0;
+            this.btnChi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChi.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChi.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnChi.IconChar = FontAwesome.Sharp.IconChar.ChevronRight;
+            this.btnChi.IconColor = System.Drawing.Color.LightGray;
+            this.btnChi.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnChi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChi.Location = new System.Drawing.Point(0, 390);
+            this.btnChi.Name = "btnChi";
+            this.btnChi.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnChi.Size = new System.Drawing.Size(155, 60);
+            this.btnChi.TabIndex = 17;
+            this.btnChi.Text = "Chi";
+            this.btnChi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnChi.UseVisualStyleBackColor = false;
+            this.btnChi.Click += new System.EventHandler(this.btnChi_Click);
             // 
             // Caditivo
             // 
@@ -174,5 +199,6 @@ namespace Plantilla_formulario
         private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
         private System.Windows.Forms.DataGridViewTextBoxColumn Xi;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ri;
+        private FontAwesome.Sharp.IconButton btnChi;
     }
 }
