@@ -80,3 +80,6 @@ C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formu
 C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.exe
 C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.pdb
 C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.Chi.resources
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\MathNet.Numerics.dll
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\MathNet.Numerics.xml
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.PMedia.resources

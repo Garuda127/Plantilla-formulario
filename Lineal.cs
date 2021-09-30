@@ -220,6 +220,52 @@ namespace Plantilla_formulario
 
             frm.Show();
         }
+        double Promedio;
+        double Alpha;
+        double li;
+        double ls;
+        double Z;
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            PMedia frmpMedia = new PMedia();
+            li = 0;
+            ls = 0;
+            Z = 1.96;
+            Promedio = 0;
+            Alpha = 0;
+            double temp = 0;
+            frmpMedia.DatosMedia.Rows.Add(Npublic);
+            for (int i = 0; i < Npublic; i++)
+            {
+                temp = Convert.ToDouble(dataGridView1[2, i].Value.ToString());
+                frmpMedia.DatosMedia[0, i].Value = temp;
+                Promedio += temp;
+            }
+            Promedio = Promedio / Npublic;
 
+            Alpha = 1 - (0.05 / 2);
+            
+            //li 0.5-(K9*(1/RAIZ(12*K5)))
+            li = 0.5 - (Z * (1 / Math.Sqrt(12 * Npublic)));
+            //ls 0.5+(K9*(1/RAIZ(12*K5)))
+            ls = 0.5 + (Z * (1 / Math.Sqrt(12 * Npublic)));
+            Console.WriteLine(Promedio);
+            /* z= MathNet.Numerics.Distribution.Normal.InverseCumulativeDistribution;*/
+            
+
+            Console.WriteLine(Z);
+            Console.WriteLine("li=" + li);
+            Console.WriteLine("ls=" + ls);
+
+           
+            frmpMedia.PmediaTxtMedia.Text = Promedio.ToString();
+            frmpMedia.PMediaTxtN.Text = Npublic.ToString();
+            frmpMedia.PMediaTxt1.Text = Alpha.ToString();
+            frmpMedia.PMediaTxtZ.Text = Z.ToString();
+            frmpMedia.PMediaTxtLi.Text = li.ToString();
+            frmpMedia.PMediaTxtLs.Text = ls.ToString();
+
+            frmpMedia.Show();
+        }
     }
 }
