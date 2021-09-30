@@ -36,8 +36,13 @@
     <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="MathNet.Numerics, Version=4.15.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MathNet.Numerics.4.15.0\lib\net461\MathNet.Numerics.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -85,6 +90,12 @@
     <Compile Include="MultCons.Designer.cs">
       <DependentUpon>MultCons.cs</DependentUpon>
     </Compile>
+    <Compile Include="PMedia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PMedia.Designer.cs">
+      <DependentUpon>PMedia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="ProductosMedios.cs">
       <SubType>Form</SubType>
@@ -110,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MultCons.resx">
       <DependentUpon>MultCons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PMedia.resx">
+      <DependentUpon>PMedia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductosMedios.resx">
       <DependentUpon>ProductosMedios.cs</DependentUpon>
