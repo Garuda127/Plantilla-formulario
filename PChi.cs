@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Plantilla_formulario
 {
-    public partial class Chi : Form
+    public partial class PChi : Form
     {
-        public Chi()
+        public PChi()
         {
             InitializeComponent();
         }

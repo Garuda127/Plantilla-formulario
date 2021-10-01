@@ -1,7 +1,7 @@
 ﻿
 namespace Plantilla_formulario
 {
-    partial class Chi
+    partial class PChi
     {
         /// <summary>
         /// Required designer variable.

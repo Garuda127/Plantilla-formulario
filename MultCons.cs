@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MathNet.Numerics.Distributions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -177,7 +178,7 @@ namespace Plantilla_formulario
             suma = EiOi[0] + EiOi[1] + EiOi[2] + EiOi[3] + EiOi[4] + EiOi[5] + EiOi[6] + EiOi[7] + EiOi[8] + EiOi[9];
             Console.WriteLine(suma);
             //suma
-            Chi frm = new Chi();
+            PChi frm = new PChi();
 
             frm.txtMchi.Text = raizM.ToString();
             frm.txtNchi.Text = Npublic.ToString();
@@ -224,6 +225,101 @@ namespace Plantilla_formulario
             frm.txtTABLAchi.Text = "16.9190";
 
             frm.Show();
+        }
+        double Promedio;
+        double Alpha;
+        double li;
+        double ls;
+        double Z;
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            PMedia frmpMedia = new PMedia();
+            li = 0;
+            ls = 0;
+            Z = 1.96;
+            Promedio = 0;
+            Alpha = 0;
+            double temp = 0;
+            frmpMedia.DatosMedia.Rows.Add(Npublic);
+            for (int i = 0; i < Npublic; i++)
+            {
+                temp = Convert.ToDouble(dataGridView1[2, i].Value.ToString());
+                frmpMedia.DatosMedia[0, i].Value = temp;
+                Promedio += temp;
+            }
+            Promedio = Promedio / Npublic;
+
+            Alpha = 1 - (0.05 / 2);
+
+            //li 0.5-(K9*(1/RAIZ(12*K5)))
+            li = 0.5 - (Z * (1 / Math.Sqrt(12 * Npublic)));
+            //ls 0.5+(K9*(1/RAIZ(12*K5)))
+            ls = 0.5 + (Z * (1 / Math.Sqrt(12 * Npublic)));
+            Console.WriteLine(Promedio);
+            /* z= MathNet.Numerics.Distribution.Normal.InverseCumulativeDistribution;*/
+
+
+            Console.WriteLine(Z);
+            Console.WriteLine("li=" + li);
+            Console.WriteLine("ls=" + ls);
+
+
+            frmpMedia.PmediaTxtMedia.Text = Promedio.ToString();
+            frmpMedia.PMediaTxtN.Text = Npublic.ToString();
+            frmpMedia.PMediaTxt1.Text = Alpha.ToString();
+            frmpMedia.PMediaTxtZ.Text = Z.ToString();
+            frmpMedia.PMediaTxtLi.Text = li.ToString();
+            frmpMedia.PMediaTxtLs.Text = ls.ToString();
+
+            frmpMedia.Show();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            Pvariable frmVar = new Pvariable();
+
+            double temp;
+            double temp2 = 0;
+            double op;
+            double chix;//(a/2)
+            double chix2;//1-(a/2)
+            double Vri = 0;
+            double liv;
+            double lsv;
+            chix = ChiSquared.InvCDF((Npublic - 1), 0.975);
+            frmVar.PvarTxta2.Text = chix.ToString();
+
+            chix2 = ChiSquared.InvCDF((Npublic - 1), 0.025);
+            frmVar.PvarTxt1a2.Text = chix2.ToString();
+            //Promedio
+            for (int i = 0; i < Npublic; i++)
+            {
+                temp = Convert.ToDouble(dataGridView1[2, i].Value.ToString());
+                Promedio += temp;
+            }
+            Promedio = Promedio / Npublic;
+            Console.WriteLine("Promedio= " + Promedio);
+            //operacion 
+            frmVar.DatosPvar.Rows.Add(Npublic);
+            for (int i = 0; i < Npublic; i++)
+            {
+                temp = Convert.ToDouble(dataGridView1[2, i].Value.ToString());
+                op = Math.Pow((temp - Promedio), 2);//=((tabla-promedio)^2)
+                //llenar tabla
+                frmVar.DatosPvar[0, i].Value = temp;
+                frmVar.DatosPvar[1, i].Value = op;
+                //llenar tabla
+                temp2 += op;
+            }
+            Console.WriteLine(temp2);
+            Vri = temp2 / (Npublic - 1);
+            liv = chix2 / (12 * (Npublic - 1));//=chix2/(12*39)
+            lsv = chix / (12 * (Npublic - 1));
+
+            frmVar.PvarTxtVri.Text = Vri.ToString();
+            frmVar.PvarTxtLi.Text = liv.ToString();
+            frmVar.PvarTxtLs.Text = lsv.ToString();
+            frmVar.Show();
         }
     }
 }
