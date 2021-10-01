@@ -301,5 +301,73 @@ namespace Plantilla_formulario
             frmVar.PvarTxtLs.Text = lsv.ToString();
             frmVar.Show();
         }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            PCorridas frmcorridas = new PCorridas();
+            double valor1;
+            double valor2;
+            double S1;
+            double S2;
+            int corridas;
+            int Co = 0;
+            double valesp;
+            double varianza;
+            double estadistico;
+            double vartab;
+            frmcorridas.DatosCorridas.Rows.Add(Npublic);
+            frmcorridas.PCorTxtAlfa.Text = "0.05";
+            for (int i = 0; i < Npublic; i++)
+            {
+                frmcorridas.DatosCorridas[0, i].Value = Convert.ToDouble(dataGridView1[2, i].Value.ToString());
+            }
+            //for S
+
+            for (int i = 1; i < Npublic; i++)
+            {
+                valor1 = Convert.ToDouble(dataGridView1[2, i].Value.ToString());
+                valor2 = Convert.ToDouble(dataGridView1[2, i - 1].Value.ToString());
+                //if
+                if (valor1 > valor2)
+                {
+                    frmcorridas.DatosCorridas[1, i].Value = "1";
+                }
+                else
+                {
+                    frmcorridas.DatosCorridas[1, i].Value = "0";
+                }//if
+
+            }//for S
+            //for NO Corridas
+            for (int i = 2; i < Npublic; i++)
+            {
+                S1 = Convert.ToDouble(frmcorridas.DatosCorridas[1, i].Value.ToString());
+                S2 = Convert.ToDouble(frmcorridas.DatosCorridas[1, i - 1].Value.ToString());
+                corridas = (int)Math.Abs(S1 - S2);
+                frmcorridas.DatosCorridas[2, i].Value = corridas;
+                Co += corridas;
+            }//for NO Corridas
+            frmcorridas.PCorTxtCo.Text = Co.ToString();
+            frmcorridas.PCorTxtN.Text = Npublic.ToString();
+            valesp = ((2 * Npublic) - 1) / 3;
+            frmcorridas.PCorTxtVesp.Text = valesp.ToString();
+            varianza = ((16 * Npublic) - 29) / 90;
+            frmcorridas.PCorTxtVar.Text = varianza.ToString();
+            estadistico = (Math.Abs(Co - valesp)) / (Math.Sqrt(varianza));
+            frmcorridas.PCorTxtEstadist.Text = estadistico.ToString();
+            var curve = new MathNet.Numerics.Distributions.Normal();
+            vartab = curve.InverseCumulativeDistribution(1 - (0.05 / 2));
+            frmcorridas.PCorTxtValTab.Text = vartab.ToString();
+
+            if (estadistico < vartab)
+            {
+                frmcorridas.PCorTxtHo.Text = "No se Rechaza";
+            }
+            else
+            {
+                frmcorridas.PCorTxtHo.Text = "se Rechaza";
+            }
+            frmcorridas.Show();
+        }
     }
 }

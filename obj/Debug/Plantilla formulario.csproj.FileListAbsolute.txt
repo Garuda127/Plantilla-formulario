@@ -84,3 +84,6 @@ C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\MathNet.Numeric
 C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.PMedia.resources
 C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.PChi.resources
 C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.Pvariable.resources
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\EPPlus.Core.dll
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\EPPlus.Core.xml
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.PCorridas.resources
