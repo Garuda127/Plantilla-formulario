@@ -18,49 +18,84 @@ namespace Plantilla_formulario
             InitializeComponent();
         }
         int Npublic = 0;
+        private bool ValidarCampos()
+        {
+            bool ok = true;
+
+
+            if (txtAlfa.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtAlfa, "falta llenar");
+            }
+            //if (txtN.Text == "")
+            //{
+            //    ok = false;
+            //    errorProvider1.SetError(txtN, "falta llenar");
+            //}
+            if (txtX0.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtX0, "falta llenar");
+            }
+            
+            return ok;
+        }
+        private void BorrarMSG()
+        {
+            errorProvider1.SetError(txtX0, "");
+            errorProvider1.SetError(txtN, "");
+            errorProvider1.SetError(txtAlfa, "");
+        }
         private void btnOK_Click(object sender, EventArgs e)
         {
-            int x0 = Convert.ToInt32(txtX0.Text);
-            int N = Convert.ToInt32(txtN.Text);
-            int Xi1 = 0;
-            Npublic = N;
-             Xi1 = x0;
-            double Ri ;
-            string temp1;
-            for (int i = 0; i < N; i++)
+            BorrarMSG();
+            if (ValidarCampos())
             {
-                Xi1 = ((int)Math.Pow(Xi1, 2));
-                temp1 = Xi1.ToString();
-                if (temp1.Length == 6)
-                {
-                    Xi1 = Convert.ToInt32(temp1.Substring(1, 4));
-                    dataGridView1.Rows.Add();
-                    dataGridView1[0, i].Value = "X" + (i+1);
-                    dataGridView1[1, i].Value = "" + Xi1;
-                    Ri = (double)Xi1 / 10000;
-                    dataGridView1[2, i].Value = String.Format("{0:0.000#}", Ri);
-                   
-                }
 
-                else if (temp1.Length % 2 == 0)
+
+                int x0 = Convert.ToInt32(txtX0.Text);
+                int N = Convert.ToInt32(txtN.Text);
+                int Xi1 = 0;
+                Npublic = N;
+                Xi1 = x0;
+                double Ri;
+                string temp1;
+                for (int i = 0; i < N; i++)
                 {
-                    Xi1 = Convert.ToInt32(temp1.Substring(2, 4));
-                    dataGridView1.Rows.Add();
-                    dataGridView1[0, i].Value = "X" + (i + 1);
-                    dataGridView1[1, i].Value = "" + Xi1;
-                    Ri = (double)Xi1 / 10000;
-                    dataGridView1[2, i].Value = String.Format("{0:0.000#}", Ri);
-                    
-                }
-                else
-                {
-                    Xi1 = Convert.ToInt32(temp1.Substring(1, 4));
-                    dataGridView1.Rows.Add();
-                    dataGridView1[0, i].Value = "X" + (i + 1);
-                    dataGridView1[1, i].Value = "" + Xi1;
-                    Ri = (double)Xi1 / 10000;
-                    dataGridView1[2, i].Value = String.Format("{0:0.000#}", Ri);
-                    
+                    Xi1 = ((int)Math.Pow(Xi1, 2));
+                    temp1 = Xi1.ToString();
+                    if (temp1.Length == 6)
+                    {
+                        Xi1 = Convert.ToInt32(temp1.Substring(1, 4));
+                        dataGridView1.Rows.Add();
+                        dataGridView1[0, i].Value = "X" + (i + 1);
+                        dataGridView1[1, i].Value = "" + Xi1;
+                        Ri = (double)Xi1 / 10000;
+                        dataGridView1[2, i].Value = String.Format("{0:0.000#}", Ri);
+
+                    }
+
+                    else if (temp1.Length % 2 == 0)
+                    {
+                        Xi1 = Convert.ToInt32(temp1.Substring(2, 4));
+                        dataGridView1.Rows.Add();
+                        dataGridView1[0, i].Value = "X" + (i + 1);
+                        dataGridView1[1, i].Value = "" + Xi1;
+                        Ri = (double)Xi1 / 10000;
+                        dataGridView1[2, i].Value = String.Format("{0:0.000#}", Ri);
+
+                    }
+                    else
+                    {
+                        Xi1 = Convert.ToInt32(temp1.Substring(1, 4));
+                        dataGridView1.Rows.Add();
+                        dataGridView1[0, i].Value = "X" + (i + 1);
+                        dataGridView1[1, i].Value = "" + Xi1;
+                        Ri = (double)Xi1 / 10000;
+                        dataGridView1[2, i].Value = String.Format("{0:0.000#}", Ri);
+
+                    }
                 }
             }
         }

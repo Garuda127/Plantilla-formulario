@@ -87,3 +87,7 @@ C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formu
 C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\EPPlus.Core.dll
 C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\EPPlus.Core.xml
 C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.PCorridas.resources
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\Plantilla formulario.exe.manifest
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\Plantilla formulario.application
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.exe.manifest
+C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.application

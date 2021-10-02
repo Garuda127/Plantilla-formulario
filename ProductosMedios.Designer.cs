@@ -29,28 +29,31 @@ namespace Plantilla_formulario
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtXo = new System.Windows.Forms.TextBox();
             this.btnOK = new System.Windows.Forms.Button();
             this.txtG = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtAlfa = new System.Windows.Forms.TextBox();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.btnChi = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.btnChi = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.txtN = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Xi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ri = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtAlfa = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtXo
@@ -114,6 +117,40 @@ namespace Plantilla_formulario
             this.panel1.Size = new System.Drawing.Size(151, 614);
             this.panel1.TabIndex = 10;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.txtAlfa);
+            this.panel2.Controls.Add(this.iconButton3);
+            this.panel2.Controls.Add(this.btnChi);
+            this.panel2.Controls.Add(this.iconButton2);
+            this.panel2.Controls.Add(this.iconButton1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 414);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(151, 200);
+            this.panel2.TabIndex = 21;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(20, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(31, 13);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Alfa=";
+            // 
+            // txtAlfa
+            // 
+            this.txtAlfa.Dock = System.Windows.Forms.DockStyle.Right;
+            this.txtAlfa.Location = new System.Drawing.Point(51, 0);
+            this.txtAlfa.Name = "txtAlfa";
+            this.txtAlfa.Size = new System.Drawing.Size(100, 20);
+            this.txtAlfa.TabIndex = 21;
+            this.txtAlfa.Text = "0.05";
+            // 
             // iconButton3
             // 
             this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(17)))), ((int)(((byte)(28)))));
@@ -136,6 +173,29 @@ namespace Plantilla_formulario
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton3.UseVisualStyleBackColor = false;
             this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            // 
+            // btnChi
+            // 
+            this.btnChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(17)))), ((int)(((byte)(28)))));
+            this.btnChi.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnChi.FlatAppearance.BorderSize = 0;
+            this.btnChi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChi.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChi.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnChi.IconChar = FontAwesome.Sharp.IconChar.ChevronRight;
+            this.btnChi.IconColor = System.Drawing.Color.LightGray;
+            this.btnChi.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnChi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChi.Location = new System.Drawing.Point(0, 74);
+            this.btnChi.Name = "btnChi";
+            this.btnChi.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnChi.Size = new System.Drawing.Size(151, 42);
+            this.btnChi.TabIndex = 17;
+            this.btnChi.Text = "Chi";
+            this.btnChi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnChi.UseVisualStyleBackColor = false;
+            this.btnChi.Click += new System.EventHandler(this.btnChi_Click);
             // 
             // iconButton2
             // 
@@ -182,29 +242,6 @@ namespace Plantilla_formulario
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
-            // btnChi
-            // 
-            this.btnChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(17)))), ((int)(((byte)(28)))));
-            this.btnChi.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnChi.FlatAppearance.BorderSize = 0;
-            this.btnChi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChi.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChi.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnChi.IconChar = FontAwesome.Sharp.IconChar.ChevronRight;
-            this.btnChi.IconColor = System.Drawing.Color.LightGray;
-            this.btnChi.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnChi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChi.Location = new System.Drawing.Point(0, 74);
-            this.btnChi.Name = "btnChi";
-            this.btnChi.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnChi.Size = new System.Drawing.Size(151, 42);
-            this.btnChi.TabIndex = 17;
-            this.btnChi.Text = "Chi";
-            this.btnChi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnChi.UseVisualStyleBackColor = false;
-            this.btnChi.Click += new System.EventHandler(this.btnChi_Click);
             // 
             // label3
             // 
@@ -263,39 +300,9 @@ namespace Plantilla_formulario
             this.Ri.Name = "Ri";
             this.Ri.ReadOnly = true;
             // 
-            // panel2
+            // errorProvider1
             // 
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.txtAlfa);
-            this.panel2.Controls.Add(this.iconButton3);
-            this.panel2.Controls.Add(this.btnChi);
-            this.panel2.Controls.Add(this.iconButton2);
-            this.panel2.Controls.Add(this.iconButton1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 414);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(151, 200);
-            this.panel2.TabIndex = 21;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(20, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Alfa=";
-            // 
-            // txtAlfa
-            // 
-            this.txtAlfa.Dock = System.Windows.Forms.DockStyle.Right;
-            this.txtAlfa.Location = new System.Drawing.Point(51, 0);
-            this.txtAlfa.Name = "txtAlfa";
-            this.txtAlfa.Size = new System.Drawing.Size(100, 20);
-            this.txtAlfa.TabIndex = 21;
-            this.txtAlfa.Text = "0.05";
+            this.errorProvider1.ContainerControl = this;
             // 
             // ProductosMedios
             // 
@@ -309,9 +316,10 @@ namespace Plantilla_formulario
             this.Text = "Productos Medios";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -337,5 +345,6 @@ namespace Plantilla_formulario
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtAlfa;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

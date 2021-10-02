@@ -64,52 +64,89 @@ namespace Plantilla_formulario
                 count = (Convert.ToInt32(t[i]) + Convert.ToInt32(temp));
                 Xi1 = count % (M);
                 dataGridView1.Rows.Add();
-                    dataGridView1[0, i].Value = "X" + (1);
+                    dataGridView1[0, i].Value = "X" + (i+N);
                     dataGridView1[1, i].Value = "" + Xi1;
                 Ri =(double) Xi1 / m2;
                     dataGridView1[2, i].Value = String.Format("{0:0.000#}", Ri);
                 temp = Xi1;
             }           
         }
-
-        private void btnOK_Click_1(object sender, EventArgs e)
+        private bool ValidarCampos()
         {
-            int N = Convert.ToInt32(txtN.Text);
-            for (int i = 0; i < N; i++)
+            bool ok = true;
+
+
+            if (txtAlfa.Text == "")
             {
-
-
-                txtBox = new TextBox();
-                this.txtBox.Name = "txtBox" + txtcount;
-                this.txtBox.Location = new System.Drawing.Point(36, txtalt);
-                this.txtBox.Size = new System.Drawing.Size(100, 20);
-                this.panel1.Controls.Add(this.txtBox);
-                t = new string[N];
-                
-                //label
-                lblCount = new Label();
-                this.lblCount.ForeColor = Color.White;
-                this.lblCount.Text = "X" + txtcount + "=";
-                this.lblCount.Name = "lblCount" + txtcount;
-                this.lblCount.Location = new System.Drawing.Point(10, txtalt);
-                this.lblCount.Size = new System.Drawing.Size(100, 20);
-                txtalt += 22;
-                this.panel1.Controls.Add(this.lblCount);
-                txtcount++;
+                ok = false;
+                errorProvider1.SetError(txtAlfa, "falta llenar");
+            }
+            if (txtM.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtM, "falta llenar");
+            }
+            if (txtN.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtN, "falta llenar");
             }
 
-            
-            this.btnAdd.BackColor = Color.White;
-            this.btnAdd.Name = "btnCalcular";
-            this.btnAdd.Text = "Calcular";
-            this.btnAdd.Location = new System.Drawing.Point(48, txtalt);
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.Enabled = true;
-            
-            this.panel1.Controls.Add(this.btnAdd);
-            this.btnAdd.Click += new System.EventHandler(this.btnCalcular_Click);
-            txtcount = 1;
-             txtalt = 53;
+            return ok;
+        }
+        private void BorrarMSG()
+        {
+            errorProvider1.SetError(txtM, "");
+            errorProvider1.SetError(txtAlfa, "");
+            errorProvider1.SetError(txtN, "");
+          
+        }
+        private void btnOK_Click_1(object sender, EventArgs e)
+        {
+            int btnok = 0;
+            BorrarMSG();
+            if (ValidarCampos() & btnok == 0)
+            {
+
+                btnok++;
+                int N = Convert.ToInt32(txtN.Text);
+                for (int i = 0; i < N; i++)
+                {
+
+
+                    txtBox = new TextBox();
+                    this.txtBox.Text = "0";
+                    this.txtBox.Name = "txtBox" + txtcount;
+                    this.txtBox.Location = new System.Drawing.Point(36, txtalt);
+                    this.txtBox.Size = new System.Drawing.Size(100, 20);
+                    this.panel1.Controls.Add(this.txtBox);
+                    t = new string[N];
+
+                    //label
+                    lblCount = new Label();
+                    this.lblCount.ForeColor = Color.White;
+                    this.lblCount.Text = "X" + txtcount + "=";
+                    this.lblCount.Name = "lblCount" + txtcount;
+                    this.lblCount.Location = new System.Drawing.Point(10, txtalt);
+                    this.lblCount.Size = new System.Drawing.Size(100, 20);
+                    txtalt += 22;
+                    this.panel1.Controls.Add(this.lblCount);
+                    txtcount++;
+                }
+
+
+                this.btnAdd.BackColor = Color.White;
+                this.btnAdd.Name = "btnCalcular";
+                this.btnAdd.Text = "Calcular";
+                this.btnAdd.Location = new System.Drawing.Point(48, txtalt);
+                this.btnAdd.Size = new System.Drawing.Size(75, 23);
+                this.btnAdd.Enabled = true;
+
+                this.panel1.Controls.Add(this.btnAdd);
+                this.btnAdd.Click += new System.EventHandler(this.btnCalcular_Click);
+                txtcount = 1;
+                txtalt = 53;
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
