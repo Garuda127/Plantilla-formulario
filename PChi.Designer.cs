@@ -29,16 +29,18 @@ namespace Plantilla_formulario
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtMchi = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtNchi = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtSUMAchi = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTABLAchi = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtSUMAchi = new System.Windows.Forms.TextBox();
+            this.txtNchi = new System.Windows.Forms.TextBox();
             this.DatosChi = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,7 +78,6 @@ namespace Plantilla_formulario
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtTABLAchi);
             this.panel1.Controls.Add(this.label3);
@@ -91,12 +92,22 @@ namespace Plantilla_formulario
             this.panel1.Size = new System.Drawing.Size(166, 450);
             this.panel1.TabIndex = 3;
             // 
-            // txtNchi
+            // label4
             // 
-            this.txtNchi.Location = new System.Drawing.Point(42, 6);
-            this.txtNchi.Name = "txtNchi";
-            this.txtNchi.Size = new System.Drawing.Size(115, 20);
-            this.txtNchi.TabIndex = 3;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(11, 85);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Tabla Xa";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // txtTABLAchi
+            // 
+            this.txtTABLAchi.Location = new System.Drawing.Point(76, 82);
+            this.txtTABLAchi.Name = "txtTABLAchi";
+            this.txtTABLAchi.Size = new System.Drawing.Size(81, 20);
+            this.txtTABLAchi.TabIndex = 6;
             // 
             // label3
             // 
@@ -114,34 +125,17 @@ namespace Plantilla_formulario
             this.txtSUMAchi.Size = new System.Drawing.Size(100, 20);
             this.txtSUMAchi.TabIndex = 4;
             // 
-            // label4
+            // txtNchi
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(11, 85);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Tabla Xa,9";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // txtTABLAchi
-            // 
-            this.txtTABLAchi.Location = new System.Drawing.Point(76, 82);
-            this.txtTABLAchi.Name = "txtTABLAchi";
-            this.txtTABLAchi.Size = new System.Drawing.Size(81, 20);
-            this.txtTABLAchi.TabIndex = 6;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(42, 415);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Exit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.txtNchi.Location = new System.Drawing.Point(42, 6);
+            this.txtNchi.Name = "txtNchi";
+            this.txtNchi.Size = new System.Drawing.Size(115, 20);
+            this.txtNchi.TabIndex = 3;
             // 
             // DatosChi
             // 
+            dataGridViewCellStyle1.NullValue = null;
+            this.DatosChi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DatosChi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DatosChi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -170,23 +164,29 @@ namespace Plantilla_formulario
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle2.Format = "N4";
+            dataGridViewCellStyle2.NullValue = null;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column3.HeaderText = "Ei=n/m";
             this.Column3.Name = "Column3";
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle3.Format = "N4";
+            dataGridViewCellStyle3.NullValue = null;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column4.HeaderText = "((Ei-Oi)^2)/Ei";
             this.Column4.Name = "Column4";
             // 
-            // Chi
+            // PChi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.DatosChi);
             this.Controls.Add(this.panel1);
-            this.Name = "Chi";
+            this.Name = "PChi";
             this.Text = "Chi Cuadrada";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -201,15 +201,14 @@ namespace Plantilla_formulario
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         public System.Windows.Forms.TextBox txtMchi;
         public System.Windows.Forms.TextBox txtTABLAchi;
         public System.Windows.Forms.TextBox txtSUMAchi;
         public System.Windows.Forms.TextBox txtNchi;
         public System.Windows.Forms.DataGridView DatosChi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }

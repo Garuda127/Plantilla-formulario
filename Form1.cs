@@ -29,6 +29,12 @@ namespace Plantilla_formulario
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
+            Reset();
         }
         //Structs
         private struct RGBColors
