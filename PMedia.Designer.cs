@@ -30,19 +30,18 @@ namespace Plantilla_formulario
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.PMediaTxtN = new System.Windows.Forms.TextBox();
-            this.PmediaTxtMedia = new System.Windows.Forms.TextBox();
-            this.PMediaTxt1 = new System.Windows.Forms.TextBox();
-            this.PMediaTxtZ = new System.Windows.Forms.TextBox();
-            this.PMediaTxtLi = new System.Windows.Forms.TextBox();
             this.PMediaTxtLs = new System.Windows.Forms.TextBox();
+            this.PMediaTxtLi = new System.Windows.Forms.TextBox();
+            this.PMediaTxtZ = new System.Windows.Forms.TextBox();
+            this.PMediaTxt1 = new System.Windows.Forms.TextBox();
+            this.PmediaTxtMedia = new System.Windows.Forms.TextBox();
+            this.PMediaTxtN = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.DatosMedia = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
@@ -63,71 +62,65 @@ namespace Plantilla_formulario
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnExit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(167, 436);
             this.panel1.TabIndex = 0;
             // 
-            // btnExit
+            // PMediaTxtLs
             // 
-            this.btnExit.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Location = new System.Drawing.Point(0, 395);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(167, 41);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.PMediaTxtLs.Enabled = false;
+            this.PMediaTxtLs.Location = new System.Drawing.Point(59, 136);
+            this.PMediaTxtLs.Name = "PMediaTxtLs";
+            this.PMediaTxtLs.ReadOnly = true;
+            this.PMediaTxtLs.Size = new System.Drawing.Size(100, 20);
+            this.PMediaTxtLs.TabIndex = 12;
             // 
-            // label1
+            // PMediaTxtLi
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "N=";
+            this.PMediaTxtLi.Enabled = false;
+            this.PMediaTxtLi.Location = new System.Drawing.Point(59, 84);
+            this.PMediaTxtLi.Name = "PMediaTxtLi";
+            this.PMediaTxtLi.ReadOnly = true;
+            this.PMediaTxtLi.Size = new System.Drawing.Size(100, 20);
+            this.PMediaTxtLi.TabIndex = 11;
             // 
-            // label2
+            // PMediaTxtZ
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Media=";
+            this.PMediaTxtZ.Enabled = false;
+            this.PMediaTxtZ.Location = new System.Drawing.Point(59, 58);
+            this.PMediaTxtZ.Name = "PMediaTxtZ";
+            this.PMediaTxtZ.ReadOnly = true;
+            this.PMediaTxtZ.Size = new System.Drawing.Size(100, 20);
+            this.PMediaTxtZ.TabIndex = 10;
             // 
-            // label3
+            // PMediaTxt1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "1-(a/2)=";
+            this.PMediaTxt1.Enabled = false;
+            this.PMediaTxt1.Location = new System.Drawing.Point(59, 32);
+            this.PMediaTxt1.Name = "PMediaTxt1";
+            this.PMediaTxt1.ReadOnly = true;
+            this.PMediaTxt1.Size = new System.Drawing.Size(100, 20);
+            this.PMediaTxt1.TabIndex = 9;
             // 
-            // label4
+            // PmediaTxtMedia
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(33, 61);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(20, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Z=";
+            this.PmediaTxtMedia.Enabled = false;
+            this.PmediaTxtMedia.Location = new System.Drawing.Point(59, 110);
+            this.PmediaTxtMedia.Name = "PmediaTxtMedia";
+            this.PmediaTxtMedia.ReadOnly = true;
+            this.PmediaTxtMedia.Size = new System.Drawing.Size(100, 20);
+            this.PmediaTxtMedia.TabIndex = 8;
             // 
-            // label5
+            // PMediaTxtN
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 87);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Li=";
+            this.PMediaTxtN.Enabled = false;
+            this.PMediaTxtN.Location = new System.Drawing.Point(59, 6);
+            this.PMediaTxtN.Name = "PMediaTxtN";
+            this.PMediaTxtN.ReadOnly = true;
+            this.PMediaTxtN.Size = new System.Drawing.Size(100, 20);
+            this.PMediaTxtN.TabIndex = 7;
             // 
             // label6
             // 
@@ -138,47 +131,50 @@ namespace Plantilla_formulario
             this.label6.TabIndex = 6;
             this.label6.Text = "Ls=";
             // 
-            // PMediaTxtN
+            // label5
             // 
-            this.PMediaTxtN.Location = new System.Drawing.Point(59, 6);
-            this.PMediaTxtN.Name = "PMediaTxtN";
-            this.PMediaTxtN.Size = new System.Drawing.Size(100, 20);
-            this.PMediaTxtN.TabIndex = 7;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(32, 87);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(21, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Li=";
             // 
-            // PmediaTxtMedia
+            // label4
             // 
-            this.PmediaTxtMedia.Location = new System.Drawing.Point(59, 110);
-            this.PmediaTxtMedia.Name = "PmediaTxtMedia";
-            this.PmediaTxtMedia.Size = new System.Drawing.Size(100, 20);
-            this.PmediaTxtMedia.TabIndex = 8;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(33, 61);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(20, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Z=";
             // 
-            // PMediaTxt1
+            // label3
             // 
-            this.PMediaTxt1.Location = new System.Drawing.Point(59, 32);
-            this.PMediaTxt1.Name = "PMediaTxt1";
-            this.PMediaTxt1.Size = new System.Drawing.Size(100, 20);
-            this.PMediaTxt1.TabIndex = 9;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(8, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "1-(a/2)=";
             // 
-            // PMediaTxtZ
+            // label2
             // 
-            this.PMediaTxtZ.Location = new System.Drawing.Point(59, 58);
-            this.PMediaTxtZ.Name = "PMediaTxtZ";
-            this.PMediaTxtZ.Size = new System.Drawing.Size(100, 20);
-            this.PMediaTxtZ.TabIndex = 10;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(11, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Media=";
             // 
-            // PMediaTxtLi
+            // label1
             // 
-            this.PMediaTxtLi.Location = new System.Drawing.Point(59, 84);
-            this.PMediaTxtLi.Name = "PMediaTxtLi";
-            this.PMediaTxtLi.Size = new System.Drawing.Size(100, 20);
-            this.PMediaTxtLi.TabIndex = 11;
-            // 
-            // PMediaTxtLs
-            // 
-            this.PMediaTxtLs.Location = new System.Drawing.Point(59, 136);
-            this.PMediaTxtLs.Name = "PMediaTxtLs";
-            this.PMediaTxtLs.Size = new System.Drawing.Size(100, 20);
-            this.PMediaTxtLs.TabIndex = 12;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(21, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "N=";
             // 
             // DatosMedia
             // 
@@ -228,7 +224,6 @@ namespace Plantilla_formulario
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnExit;
         public System.Windows.Forms.DataGridView DatosMedia;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }

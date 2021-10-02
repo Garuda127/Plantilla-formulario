@@ -32,6 +32,7 @@ namespace Plantilla_formulario
             this.btnOK = new System.Windows.Forms.Button();
             this.txtN = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.btnChi = new FontAwesome.Sharp.IconButton();
@@ -42,9 +43,12 @@ namespace Plantilla_formulario
             this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Xi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ri = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtAlfa = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnOK
@@ -67,10 +71,7 @@ namespace Plantilla_formulario
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(26)))), ((int)(((byte)(42)))));
-            this.panel1.Controls.Add(this.iconButton3);
-            this.panel1.Controls.Add(this.iconButton2);
-            this.panel1.Controls.Add(this.iconButton1);
-            this.panel1.Controls.Add(this.btnChi);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.txtX0);
             this.panel1.Controls.Add(this.btnOK);
             this.panel1.Controls.Add(this.txtN);
@@ -81,6 +82,29 @@ namespace Plantilla_formulario
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(151, 628);
             this.panel1.TabIndex = 10;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(17)))), ((int)(((byte)(28)))));
+            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.Font = new System.Drawing.Font("Arial Black", 9F);
+            this.iconButton3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.ChevronRight;
+            this.iconButton3.IconColor = System.Drawing.Color.LightGray;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.Location = new System.Drawing.Point(0, 26);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton3.Size = new System.Drawing.Size(151, 42);
+            this.iconButton3.TabIndex = 20;
+            this.iconButton3.Text = "P.CorridasUP.Down";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // iconButton2
             // 
@@ -94,7 +118,7 @@ namespace Plantilla_formulario
             this.iconButton2.IconColor = System.Drawing.Color.LightGray;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 502);
+            this.iconButton2.Location = new System.Drawing.Point(0, 110);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton2.Size = new System.Drawing.Size(151, 42);
@@ -117,7 +141,7 @@ namespace Plantilla_formulario
             this.iconButton1.IconColor = System.Drawing.Color.LightGray;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 544);
+            this.iconButton1.Location = new System.Drawing.Point(0, 152);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton1.Size = new System.Drawing.Size(151, 42);
@@ -140,7 +164,7 @@ namespace Plantilla_formulario
             this.btnChi.IconColor = System.Drawing.Color.LightGray;
             this.btnChi.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnChi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChi.Location = new System.Drawing.Point(0, 586);
+            this.btnChi.Location = new System.Drawing.Point(0, 68);
             this.btnChi.Name = "btnChi";
             this.btnChi.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnChi.Size = new System.Drawing.Size(151, 42);
@@ -218,28 +242,38 @@ namespace Plantilla_formulario
             this.Ri.Name = "Ri";
             this.Ri.ReadOnly = true;
             // 
-            // iconButton3
+            // panel2
             // 
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(17)))), ((int)(((byte)(28)))));
-            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Arial Black", 9F);
-            this.iconButton3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.ChevronRight;
-            this.iconButton3.IconColor = System.Drawing.Color.LightGray;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 460);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton3.Size = new System.Drawing.Size(151, 42);
-            this.iconButton3.TabIndex = 20;
-            this.iconButton3.Text = "P.CorridasUP.Down";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton3.UseVisualStyleBackColor = false;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            this.panel2.Controls.Add(this.txtAlfa);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.iconButton3);
+            this.panel2.Controls.Add(this.btnChi);
+            this.panel2.Controls.Add(this.iconButton2);
+            this.panel2.Controls.Add(this.iconButton1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 434);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(151, 194);
+            this.panel2.TabIndex = 21;
+            // 
+            // txtAlfa
+            // 
+            this.txtAlfa.Dock = System.Windows.Forms.DockStyle.Right;
+            this.txtAlfa.Location = new System.Drawing.Point(51, 0);
+            this.txtAlfa.Name = "txtAlfa";
+            this.txtAlfa.Size = new System.Drawing.Size(100, 20);
+            this.txtAlfa.TabIndex = 21;
+            this.txtAlfa.Text = "0.05";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(3, 3);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 13);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Alfa=";
             // 
             // CuadradosMedios
             // 
@@ -253,6 +287,8 @@ namespace Plantilla_formulario
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -272,5 +308,8 @@ namespace Plantilla_formulario
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txtAlfa;
+        private System.Windows.Forms.Label label3;
     }
 }

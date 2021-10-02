@@ -201,7 +201,10 @@ namespace Plantilla_formulario
             frm.DatosChi[3, 9].Value = EiOi[9];
 
             frm.txtSUMAchi.Text = suma.ToString();
-            frm.txtTABLAchi.Text = "16.9190";
+            double alf;
+            alf = Convert.ToDouble(txtAlfa.Text);
+            double chix2 = ChiSquared.InvCDF((Npublic - 1), (1 - alf));
+            frm.txtTABLAchi.Text = chix2.ToString();
 
             frm.Show();
 
@@ -216,9 +219,12 @@ namespace Plantilla_formulario
             PMedia frmpMedia = new PMedia();
             li = 0;
             ls = 0;
-            Z = 1.96;
+            var curve = new MathNet.Numerics.Distributions.Normal();
+            var PMediaZ = curve.InverseCumulativeDistribution(1 - (Convert.ToDouble(txtAlfa.Text) / 2));
+            var PMediaZ2 = curve.InverseCumulativeDistribution((Convert.ToDouble(txtAlfa.Text) / 2));
+            Z = PMediaZ;
             Promedio = 0;
-            Alpha = 0;
+
             double temp = 0;
             frmpMedia.DatosMedia.Rows.Add(Npublic);
             for (int i = 0; i < Npublic; i++)
@@ -229,12 +235,12 @@ namespace Plantilla_formulario
             }
             Promedio = Promedio / Npublic;
 
-            Alpha = 1 - (0.05 / 2);
+            Alpha = Convert.ToDouble(txtAlfa.Text);
 
             //li 0.5-(K9*(1/RAIZ(12*K5)))
-            li = 0.5 - (Z * (1 / Math.Sqrt(12 * Npublic)));
+            li = 0.5 - (Alpha * (1 / Math.Sqrt(12 * Npublic)));
             //ls 0.5+(K9*(1/RAIZ(12*K5)))
-            ls = 0.5 + (Z * (1 / Math.Sqrt(12 * Npublic)));
+            ls = 0.5 + (Alpha * (1 / Math.Sqrt(12 * Npublic)));
             Console.WriteLine(Promedio);
             /* z= MathNet.Numerics.Distribution.Normal.InverseCumulativeDistribution;*/
 
@@ -257,7 +263,9 @@ namespace Plantilla_formulario
         private void iconButton2_Click(object sender, EventArgs e)
         {
             Pvariable frmVar = new Pvariable();
-
+            var curve = new MathNet.Numerics.Distributions.Normal();
+            var PcorZ = curve.InverseCumulativeDistribution(1 - (Convert.ToDouble(txtAlfa.Text) / 2));
+            var PcorZ2 = curve.InverseCumulativeDistribution((Convert.ToDouble(txtAlfa.Text) / 2));
             double temp;
             double temp2 = 0;
             double op;
@@ -266,10 +274,10 @@ namespace Plantilla_formulario
             double Vri = 0;
             double liv;
             double lsv;
-            chix = ChiSquared.InvCDF((Npublic - 1), 0.975);
+            chix = ChiSquared.InvCDF((Npublic - 1), 1 - (Convert.ToDouble(txtAlfa.Text)));
             frmVar.PvarTxta2.Text = chix.ToString();
 
-            chix2 = ChiSquared.InvCDF((Npublic - 1), 0.025);
+            chix2 = ChiSquared.InvCDF((Npublic - 1), (Convert.ToDouble(txtAlfa.Text)));
             frmVar.PvarTxt1a2.Text = chix2.ToString();
             //Promedio
             for (int i = 0; i < Npublic; i++)
@@ -305,6 +313,8 @@ namespace Plantilla_formulario
         private void iconButton3_Click(object sender, EventArgs e)
         {
             PCorridas frmcorridas = new PCorridas();
+            double alpha;
+            alpha = Convert.ToDouble(txtAlfa.Text);
             double valor1;
             double valor2;
             double S1;
@@ -316,7 +326,7 @@ namespace Plantilla_formulario
             double estadistico;
             double vartab;
             frmcorridas.DatosCorridas.Rows.Add(Npublic);
-            frmcorridas.PCorTxtAlfa.Text = "0.05";
+            frmcorridas.PCorTxtAlfa.Text = alpha.ToString();
             for (int i = 0; i < Npublic; i++)
             {
                 frmcorridas.DatosCorridas[0, i].Value = Convert.ToDouble(dataGridView1[2, i].Value.ToString());
@@ -356,7 +366,7 @@ namespace Plantilla_formulario
             estadistico = (Math.Abs(Co - valesp)) / (Math.Sqrt(varianza));
             frmcorridas.PCorTxtEstadist.Text = estadistico.ToString();
             var curve = new MathNet.Numerics.Distributions.Normal();
-            vartab = curve.InverseCumulativeDistribution(1 - (0.05 / 2));
+            vartab = curve.InverseCumulativeDistribution(1 - (alpha / 2));
             frmcorridas.PCorTxtValTab.Text = vartab.ToString();
 
             if (estadistico < vartab)
