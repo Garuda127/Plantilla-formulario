@@ -52,6 +52,7 @@ namespace Plantilla_formulario
             // 
             // txtMchi
             // 
+            this.txtMchi.Enabled = false;
             this.txtMchi.Location = new System.Drawing.Point(43, 30);
             this.txtMchi.Name = "txtMchi";
             this.txtMchi.Size = new System.Drawing.Size(114, 20);
@@ -104,6 +105,7 @@ namespace Plantilla_formulario
             // 
             // txtTABLAchi
             // 
+            this.txtTABLAchi.Enabled = false;
             this.txtTABLAchi.Location = new System.Drawing.Point(76, 82);
             this.txtTABLAchi.Name = "txtTABLAchi";
             this.txtTABLAchi.Size = new System.Drawing.Size(81, 20);
@@ -120,6 +122,7 @@ namespace Plantilla_formulario
             // 
             // txtSUMAchi
             // 
+            this.txtSUMAchi.Enabled = false;
             this.txtSUMAchi.Location = new System.Drawing.Point(57, 56);
             this.txtSUMAchi.Name = "txtSUMAchi";
             this.txtSUMAchi.Size = new System.Drawing.Size(100, 20);
@@ -127,6 +130,7 @@ namespace Plantilla_formulario
             // 
             // txtNchi
             // 
+            this.txtNchi.Enabled = false;
             this.txtNchi.Location = new System.Drawing.Point(42, 6);
             this.txtNchi.Name = "txtNchi";
             this.txtNchi.Size = new System.Drawing.Size(115, 20);
