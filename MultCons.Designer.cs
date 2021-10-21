@@ -213,6 +213,7 @@ namespace Plantilla_formulario
             this.TB3.Name = "TB3";
             this.TB3.Size = new System.Drawing.Size(100, 20);
             this.TB3.TabIndex = 5;
+            this.TB3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB3_KeyPress);
             // 
             // TB2
             // 
@@ -220,6 +221,7 @@ namespace Plantilla_formulario
             this.TB2.Name = "TB2";
             this.TB2.Size = new System.Drawing.Size(100, 20);
             this.TB2.TabIndex = 4;
+            this.TB2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB2_KeyPress);
             // 
             // TB1
             // 
@@ -227,6 +229,7 @@ namespace Plantilla_formulario
             this.TB1.Name = "TB1";
             this.TB1.Size = new System.Drawing.Size(100, 20);
             this.TB1.TabIndex = 3;
+            this.TB1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB1_KeyPress);
             // 
             // label3
             // 

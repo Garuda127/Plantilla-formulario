@@ -62,6 +62,7 @@ namespace Plantilla_formulario
             this.txtXo.Name = "txtXo";
             this.txtXo.Size = new System.Drawing.Size(100, 20);
             this.txtXo.TabIndex = 1;
+            this.txtXo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtXo_KeyPress);
             // 
             // btnOK
             // 
@@ -79,6 +80,7 @@ namespace Plantilla_formulario
             this.txtG.Name = "txtG";
             this.txtG.Size = new System.Drawing.Size(100, 20);
             this.txtG.TabIndex = 2;
+            this.txtG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtG_KeyPress);
             // 
             // label2
             // 
@@ -259,6 +261,7 @@ namespace Plantilla_formulario
             this.txtN.Name = "txtN";
             this.txtN.Size = new System.Drawing.Size(100, 20);
             this.txtN.TabIndex = 7;
+            this.txtN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtN_KeyPress);
             // 
             // dataGridView1
             // 

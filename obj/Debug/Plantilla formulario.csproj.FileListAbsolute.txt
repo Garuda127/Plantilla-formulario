@@ -91,3 +91,31 @@ C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\Plantilla formu
 C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\Plantilla formulario.application
 C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.exe.manifest
 C:\Users\Martin\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.application
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\Plantilla formulario.exe.config
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\Plantilla formulario.exe.manifest
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\Plantilla formulario.application
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\Plantilla formulario.exe
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\Plantilla formulario.pdb
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\EPPlus.Core.dll
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\MathNet.Numerics.dll
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\EPPlus.Core.xml
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\bin\Debug\MathNet.Numerics.xml
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.csproj.AssemblyReference.cache
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.Caditivo.resources
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.PChi.resources
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.CuadradosMedios.resources
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.Form1.resources
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.Lineal.resources
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.MultCons.resources
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.PCorridas.resources
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.PMedia.resources
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.ProductosMedios.resources
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.Properties.Resources.resources
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla_formulario.Pvariable.resources
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.csproj.GenerateResource.cache
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.csproj.CoreCompileInputs.cache
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.exe.manifest
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.application
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.exe
+C:\Users\lpmex\Documents\GitHub\Simulacion-NumerosAle\obj\Debug\Plantilla formulario.pdb

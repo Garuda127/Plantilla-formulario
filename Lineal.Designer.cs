@@ -80,6 +80,7 @@ namespace Plantilla_formulario
             this.txtK.Name = "txtK";
             this.txtK.Size = new System.Drawing.Size(100, 20);
             this.txtK.TabIndex = 1;
+            this.txtK.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtK_KeyPress);
             // 
             // txtG
             // 
@@ -87,6 +88,7 @@ namespace Plantilla_formulario
             this.txtG.Name = "txtG";
             this.txtG.Size = new System.Drawing.Size(100, 20);
             this.txtG.TabIndex = 2;
+            this.txtG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtG_KeyPress);
             // 
             // txtC
             // 
@@ -94,6 +96,7 @@ namespace Plantilla_formulario
             this.txtC.Name = "txtC";
             this.txtC.Size = new System.Drawing.Size(100, 20);
             this.txtC.TabIndex = 3;
+            this.txtC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtC_KeyPress);
             // 
             // txtX0
             // 
@@ -101,6 +104,7 @@ namespace Plantilla_formulario
             this.txtX0.Name = "txtX0";
             this.txtX0.Size = new System.Drawing.Size(100, 20);
             this.txtX0.TabIndex = 4;
+            this.txtX0.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtX0_KeyPress);
             // 
             // label1
             // 
@@ -323,6 +327,7 @@ namespace Plantilla_formulario
             this.txtM.ReadOnly = true;
             this.txtM.Size = new System.Drawing.Size(100, 20);
             this.txtM.TabIndex = 9;
+            this.txtM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtM_KeyPress);
             // 
             // label7
             // 
@@ -342,6 +347,7 @@ namespace Plantilla_formulario
             this.txtA.ReadOnly = true;
             this.txtA.Size = new System.Drawing.Size(100, 20);
             this.txtA.TabIndex = 10;
+            this.txtA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtA_KeyPress);
             // 
             // txtN
             // 
@@ -351,6 +357,7 @@ namespace Plantilla_formulario
             this.txtN.ReadOnly = true;
             this.txtN.Size = new System.Drawing.Size(100, 20);
             this.txtN.TabIndex = 11;
+            this.txtN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtN_KeyPress);
             // 
             // dataGridView1
             // 
