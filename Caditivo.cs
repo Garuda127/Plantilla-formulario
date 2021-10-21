@@ -39,24 +39,24 @@ namespace Plantilla_formulario
             Npublic = N;
             int m2 = M - 1;
             double Ri;
-            int count=0;
-            int count2 =N;
-            int temp = 0; 
+            int count = 0;
+            int count2 = N;
+            int temp = 0;
             for (int i = 0; i < N; i++)
             {
 
-               
+
                 t[i] = ((TextBox)panel1.Controls["TxtBox" + (i + 1).ToString()]).Text;
 
 
             }
             dataGridView1.Rows.Add();
             count = (Convert.ToInt32(t[0]) + Convert.ToInt32(t[4]));
-            Xi1 = count  % (M);
+            Xi1 = count % (M);
             dataGridView1.Rows.Add();
             dataGridView1[0, 0].Value = "X1";
             dataGridView1[1, 0].Value = "" + Xi1;
-            Ri = (double) Xi1 / m2;
+            Ri = (double)Xi1 / m2;
             dataGridView1[2, 0].Value = String.Format("{0:0.000#}", Ri);
             temp = Xi1;
             for (int i = 1; i < N; i++)
@@ -64,12 +64,12 @@ namespace Plantilla_formulario
                 count = (Convert.ToInt32(t[i]) + Convert.ToInt32(temp));
                 Xi1 = count % (M);
                 dataGridView1.Rows.Add();
-                    dataGridView1[0, i].Value = "X" + (i+N);
-                    dataGridView1[1, i].Value = "" + Xi1;
-                Ri =(double) Xi1 / m2;
-                    dataGridView1[2, i].Value = String.Format("{0:0.000#}", Ri);
+                dataGridView1[0, i].Value = "X" + (i + N);
+                dataGridView1[1, i].Value = "" + Xi1;
+                Ri = (double)Xi1 / m2;
+                dataGridView1[2, i].Value = String.Format("{0:0.000#}", Ri);
                 temp = Xi1;
-            }           
+            }
         }
         private bool ValidarCampos()
         {
@@ -99,7 +99,7 @@ namespace Plantilla_formulario
             errorProvider1.SetError(txtM, "");
             errorProvider1.SetError(txtAlfa, "");
             errorProvider1.SetError(txtN, "");
-          
+
         }
         private void btnOK_Click_1(object sender, EventArgs e)
         {
@@ -472,6 +472,82 @@ namespace Plantilla_formulario
                 frmcorridas.PCorTxtHo.Text = "se Rechaza";
             }
             frmcorridas.Show();
+        }
+        int cc;
+        private void txtN_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                if (Char.IsControl(e.KeyChar)) //permitir teclas de control como retroceso
+                {
+                    e.Handled = false;
+                }
+                else
+                {
+                    //el resto de teclas pulsadas se desactivan
+                    e.Handled = true;
+                }
+            }
+
+        }
+        int cc2;
+        private void txtM_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+                else
+                {
+                    if (Char.IsControl(e.KeyChar)) //permitir teclas de control como retroceso
+                    {
+                        e.Handled = false;
+                    }
+                    else
+                    {
+                        //el resto de teclas pulsadas se desactivan
+                        e.Handled = true;
+                    }
+                }
+        }
+
+        private void txtAlfa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        int cc3;
+        private void txtAlfa_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                if (Char.IsPunctuation(e.KeyChar) & cc3 == 0)
+                {
+                    cc3++;
+                    e.Handled = false;
+
+                }
+                else
+                {
+                    if (Char.IsControl(e.KeyChar)) //permitir teclas de control como retroceso
+                    {
+                        e.Handled = false;
+                    }
+                    else
+                    {
+                        //el resto de teclas pulsadas se desactivan
+                        e.Handled = true;
+                    }
+                }
+
+            }
         }
     }
 }

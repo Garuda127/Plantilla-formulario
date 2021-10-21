@@ -70,6 +70,7 @@ namespace Plantilla_formulario
             this.txtN.Name = "txtN";
             this.txtN.Size = new System.Drawing.Size(100, 20);
             this.txtN.TabIndex = 2;
+            this.txtN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtN_KeyPress);
             // 
             // panel1
             // 
@@ -108,6 +109,7 @@ namespace Plantilla_formulario
             this.txtAlfa.Size = new System.Drawing.Size(100, 20);
             this.txtAlfa.TabIndex = 21;
             this.txtAlfa.Text = "0.05";
+            this.txtAlfa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAlfa_KeyPress);
             // 
             // label3
             // 
@@ -217,6 +219,7 @@ namespace Plantilla_formulario
             this.txtX0.Name = "txtX0";
             this.txtX0.Size = new System.Drawing.Size(100, 20);
             this.txtX0.TabIndex = 1;
+            this.txtX0.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtX0_KeyPress);
             // 
             // label2
             // 
